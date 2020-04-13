@@ -1,13 +1,40 @@
 package com.oepp.oeppMobile.Utility;
 
-class AccountSingleton
-{
-    private static final AccountSingleton ourInstance = new AccountSingleton();
+import com.oepp.oeppMobile.Models.User;
 
-    static AccountSingleton getInstance() {
+public class AccountSingleton
+{
+    public static final AccountSingleton ourInstance = new AccountSingleton();
+
+    public static AccountSingleton getInstance() {
         return ourInstance;
     }
 
-    private AccountSingleton() {
+    private User user =null;
+
+    private AccountSingleton()
+    {
+    }
+
+    public void setUser(User user)
+    {
+        this.user =user;
+    }
+
+    public User getUser()
+    {
+        return this.user;
+    }
+
+    public boolean isLoginProvided()
+    {
+        if(user !=null)
+        {
+            return  true;
+        }
+        else
+        {
+            return  true;
+        }
     }
 }

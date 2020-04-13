@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <EditText
-            android:id="@+id/password_signInActivty"
+            android:id="@+id/password_signUpActivty"
             android:hint="@string/password"
             android:gravity="center"
             style="@style/textStyle"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <EditText
-            android:id="@+id/passwordRety_signInActivty"
+            android:id="@+id/passwordRety_signUpActivty"
             android:hint="@string/passwordRety"
             android:minWidth="170dp"
             style="@style/textStyle"

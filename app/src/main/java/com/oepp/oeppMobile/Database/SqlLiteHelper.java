@@ -35,9 +35,9 @@ public class SqlLiteHelper extends SQLiteOpenHelper
 
     Context context;
 
-    public SqlLiteHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version)
+    public SqlLiteHelper(@Nullable Context context)
     {
-        super(context, name, factory, version);
+        super(context, Database_Name, null, Database_Version);
 
         this.context=context;
 
